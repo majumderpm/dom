@@ -1,7 +1,9 @@
 
 // step-1 add click event handler whit the submit button
 
-document.getElementById('btn_submit').addEventListener('click', function(){
+// document.getElementById('btn_submit').addEventListener('click', function(){
+    document.getElementById('btn_submit').addEventListener('click', function (e) {
+        e.preventDefault()
     // console.log('hello')
 
     // step-2 get the email address inside the email input the fild

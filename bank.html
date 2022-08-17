@@ -18,12 +18,12 @@
         </div>
         <div class="bg-fuchsia-400 p-8 rounded-xl">
             <h4 class="text-2xl">Withdraw</h4>
-            <h5 class="text-4xl">$00</h5>
+            <h5 class="text-4xl">$<span id="withdraw_total">00</span></h5>
         </div>
 
         <div class="bg-red-400 p-8 rounded-xl">
             <h4 class="text-2xl">Balance</h4>
-            <h5 class="text-4xl">$1240</h5>
+            <h5 class="text-4xl">$<span id="balance-total">1240</span></h5>
         </div>
        
       </div>
@@ -52,7 +52,7 @@
             <h4 class="text-2xl mb-8">Please Withdraw</h4>
             <form action="#" class="flex flex-col space-y-5">
                 <div class="flex flex-col space-y-1">
-                  <input type="text" id="user-text" autofocus class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200 text-blue-600" placeholder="$ Ammount you want to Withdraw"/>
+                  <input type="text" id="withdraw-ammount" autofocus class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200 text-blue-600" placeholder="$ Ammount you want to Withdraw"/>
                 </div>
                
                 <div>
@@ -71,5 +71,6 @@
 </main>
 
     <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 </html>
