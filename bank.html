@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<main>
+  <section class="mt-20">
+    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+        <div class="bg-cyan-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Deposit</h4>
+            <h5 class="text-4xl">$<span id="deposit_total">00</span></h5>
+        </div>
+        <div class="bg-fuchsia-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h5 class="text-4xl">$00</h5>
+        </div>
+
+        <div class="bg-red-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Balance</h4>
+            <h5 class="text-4xl">$1240</h5>
+        </div>
+       
+      </div>
+  </section>
+
+
+
+  <section class="mt-20">
+    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+        <div class="bg-amber-400 p-8 rounded-xl">
+            <h4 class="text-2xl mb-8">Please Deposit</h4>
+            <form action="#" class="flex flex-col space-y-5">
+                <div class="flex flex-col space-y-1">
+                  <!-- <label for="email" class="text-sm font-semibold text-gray-500">Email address</label> -->
+                  <input type="text" id="deposit-ammount" autofocus class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200 text-blue-600" placeholder="$ Ammount you want to Deposit"/>
+                </div>
+            
+               
+                <div>
+                  <button id="btn_deposit" type="submit" class="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-fuchsia-400 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4 " > Deposit </button>
+                </div>
+                
+              </form>
+        </div>
+        <div class="bg-lime-400 p-8 rounded-xl">
+            <h4 class="text-2xl mb-8">Please Withdraw</h4>
+            <form action="#" class="flex flex-col space-y-5">
+                <div class="flex flex-col space-y-1">
+                  <input type="text" id="user-text" autofocus class="px-4 py-2 transition duration-300 border border-gray-300 rounded focus:border-transparent focus:outline-none focus:ring-4 focus:ring-blue-200 text-blue-600" placeholder="$ Ammount you want to Withdraw"/>
+                </div>
+               
+                <div>
+                  <button id="btn_withdraw" type="submit" class="w-full px-4 py-2 text-lg font-semibold text-white transition-colors duration-300 bg-blue-500 rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-blue-200 focus:ring-4" >Withdraw</button>
+                </div>
+                
+              </form>
+        </div>
+
+        
+      </div>
+  </section>
+
+
+
+</main>
+
+    <script src="js/deposit.js"></script>
+</body>
+</html>
